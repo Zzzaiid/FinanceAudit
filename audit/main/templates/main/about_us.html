@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link rel="stylesheet" href="{% static 'styles/about_us.css' %}">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo">
+            <a href="{% url 'home' %}"><img width="40px" src="{% static 'img/main_img/lsdkfuh.png' %}" alt=""></a>
+        </div>
+        <div class="nav-list">
+            <a href="{% url 'about' %}">О нас</a>
+            <a href="{% url 'clients' %}">Клиенты и отзывы</a>
+            <a href="{% url 'contacts' %}">Контакты</a>
+            <a href="{% url 'news' %}">Новости</a>
+            <a href="{% url 'zayavka' %}">Оставить заявку</a>
+        </div>
+        <div class="autor">
+            <a href="{% url 'admin:index' %}"><img width="75%" src="{% static 'img/main_img/user 1.png' %}" alt=""></a>
+        </div>
+    </div>
+    <div class="about">
+        <div class="text1">
+            <h1>Аудиторская компания “ФинансАудит”</h1>
+            <p>Наша компания была основана с целью предоставления 
+                высококачественных финансовых услуг, которые помогают 
+                нашим клиентам достигать их бизнес-целей и обеспечивать 
+                финансовую стабильность. Мы понимаем, что каждый клиент 
+                уникален, поэтому мы предлагаем индивидуальный подход и 
+                решения, адаптированные под конкретные нужды.</p> <br>
+            <h2>Наша миссия</h2>
+            <p>Мы стремимся быть надежным партнером для наших 
+                клиентов, обеспечивая прозрачность, профессионализм 
+                и высокие стандарты качества в каждой услуге. 
+                Наша миссия — помочь вам минимизировать риски и 
+                максимизировать прибыль, используя наш опыт и знания 
+                в области финансового анализа и аудита.</p>
+        </div>
+        <div class="pict1">
+            <img src="{% static 'img/about_img/1000_F_429375762_49DppSdXYAznZwhv07D6QzfJ7KGUYWvS 1.png' %}" alt="">
+        </div>
+    </div>
+    <div class="pluses-block">
+        <div class="plus">
+            <div class="text2">
+                <h2>Наши преимущества</h2>
+                <p><span>1. Доверие:</span> Мы строим долгосрочные отношения с нашими 
+                    клиентами на основе честности и открытости.</p>
+                <p><span>2. Профессионализм:</span> Наша команда состоит из опытных 
+                    специалистов, которые постоянно повышают свою 
+                    квалификацию и следят за последними тенденциями в 
+                    области финансов.
+                </p>
+                <p><span>3. Индивидуальный подход:</span> Мы понимаем, что каждая 
+                    компания уникальна, и предлагаем решения, соответствующие 
+                    вашим потребностям.
+                </p>
+                <p><span>4. Инновации:</span> Мы используем современные технологии и 
+                    инструменты для повышения эффективности наших услуг.
+                </p>
+            </div>
+            <div class="pict2">
+                <img src="{% static 'img/about_img/success 1.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <div class="spisok">
+            <h2>Наши услуги:</h2>
+            <ul>
+                <li>Финансовый аудит</li> <br>
+                <li>Бухгалтерский учет</li> <br>
+                <li>Консалтинг по налоговым вопросам</li> <br>
+                <li>Анализ финансовых показателей</li> <br>
+                <li>Поддержка в разработке бизнес-плана</li> <br>
+            </ul>
+        </div>
+        <div class="end-block">
+            <div class="text3">
+                <h3>ОСТАЛИСЬ ВОПРОСЫ?</h3>
+                <p>Задайте вопрос по Вашей ситуации и получите <br>
+                    подробную консультацию эксперта-аудитора!</p>
+                <a href="{% url 'zayavka' %}">Оставить завку</a>
+            </div>
+            <div class="chel">
+                <img src="{% static 'img/about_img/pngtree-smart-business-man-png-image_13371408 1.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

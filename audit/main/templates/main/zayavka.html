@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка</title>
+    <link rel="stylesheet" href="{% static 'styles/zayavka.css' %}">
+    <style>
+        span {
+            font-size: 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: red;
+        }   
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo">
+            <a href="{% url 'home' %}"><img width="40px" src="{% static 'img/main_img/lsdkfuh.png' %}" alt=""></a>
+        </div>
+        <div class="nav-list">
+            <a href="{% url 'about' %}">О нас</a>
+            <a href="{% url 'clients' %}">Клиенты и отзывы</a>
+            <a href="{% url 'contacts' %}">Контакты</a>
+            <a href="{% url 'news' %}">Новости</a>
+            <a href="{% url 'zayavka' %}">Оставить заявку</a>
+        </div>
+        <div class="autor">
+            <a href="{% url 'admin:index' %}"><img width="75%" src="{% static 'img/main_img/user 1.png' %}" alt=""></a>
+        </div>
+    </div>
+    <div class="text">
+        <h1>Оставьте заявку!</h1>
+        <p>Мы рады, что вы заинтересовались нашими услугами! Заполните форму 
+            ниже, и наш специалист свяжется с вами в кратчайшие сроки для 
+            обсуждения ваших потребностей и предоставления необходимой информации.</p>
+    </div>
+    <div class="zvk">
+        <h2>Заявка</h2>
+        <form method="post">
+            {% csrf_token %} <br>
+            {{ form.name }} <br>
+            {{ form.company_name }} <br>
+            {{ form.email }} <br>
+            {{ form.phone }} <br>
+            {{ form.service_type }} <br>
+            {{ form.comment }} <br>
+            <button type="submit">Отправить заявку</button> <br>
+            <span>{{ error }}</span>
+        </form>
+    </div>
+</body>
+</html>

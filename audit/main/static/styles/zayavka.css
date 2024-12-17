@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+}
+
+p {
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+span {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-bar {
+    display: flex;
+    background-color: rgb(122, 74, 25)
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+
+.nav-list a:hover {
+    background-color: rgb(156, 106, 74);
+}
+
+.logo {
+    padding: 5px;
+}
+
+.autor {
+    text-align: center;
+    padding-top: 8px;
+    margin-right: -35px;
+    margin-left: auto;
+}
+
+.text {
+    margin-left: 30px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+.zvk {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.da {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 35px;
+    background-color: rgb(222, 222, 222);
+    border-style: none;
+    border-radius: 10px;
+    font-size: 19px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.com {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 100px;
+    background-color: rgb(222, 222, 222);
+    border-style: none;
+    border-radius: 10px;
+    font-size: 19px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.zvk a {
+    margin-left: 805px;
+    display: block;
+    background-color: rgb(122, 74, 25);
+    width: 300px;
+    height: 55px;
+    font-size: 25px;
+    line-height: 50px;
+    color: white;
+    border-radius: 30px;
+    margin-bottom: 40px;
+}
+
+.zvk a:hover {
+    background-color: rgb(156, 106, 74);
+    text-decoration: none;
+}
+
+select {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 42px;
+    background-color: rgb(222, 222, 222);
+    border-style: none;
+    border-radius: 10px;
+    font-size: 19px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(106, 106, 106)
+}
+
+button {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: #8B4513; 
+    color: white; 
+    border: none; 
+    border-radius: 18px; 
+    padding: 20px 40px; 
+    font-size: 24px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6F4C3E;
+}

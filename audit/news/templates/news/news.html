@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="{% static 'styles/news.css' %}">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo">
+            <a href="{% url 'home' %}"><img width="40px" src="{% static 'img/main_img/lsdkfuh.png' %}" alt=""></a>
+        </div>
+        <div class="nav-list">
+            <a href="{% url 'about' %}">О нас</a>
+            <a href="{% url 'clients' %}">Клиенты и отзывы</a>
+            <a href="{% url 'contacts' %}">Контакты</a>
+            <a href="{% url 'news' %}">Новости</a>
+            <a href="{% url 'zayavka' %}">Оставить заявку</a>
+        </div>
+        <div class="autor">
+            <a href="{% url 'admin:index' %}"><img width="75%" src="{% static 'img/main_img/user 1.png' %}" alt=""></a>
+        </div>
+    </div>
+    <h1>Последние новости и тенденции финансового аудита</h1>
+    {% for el in news %}
+    <div class="new1">
+        <h2>{{ el.title }}</h2>
+        <h3>{{ el.date }}</h3>
+        <p>{{ el.text }}</p>
+    </div>
+    {% endfor %}
+</body>
+</html>

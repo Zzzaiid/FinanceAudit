@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="{% static 'styles/contacts.css' %}">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo">
+            <a href="{% url 'home' %}"><img width="40px" src="{% static 'img/main_img/lsdkfuh.png' %}" alt=""></a>
+        </div>
+        <div class="nav-list">
+            <a href="{% url 'about' %}">О нас</a>
+            <a href="{% url 'clients' %}">Клиенты и отзывы</a>
+            <a href="{% url 'contacts' %}">Контакты</a>
+            <a href="{% url 'news' %}">Новости</a>
+            <a href="{% url 'zayavka' %}">Оставить заявку</a>
+        </div>
+        <div class="autor">
+            <a href="{% url 'admin:index' %}"><img width="75%" src="{% static 'img/main_img/user 1.png' %}" alt=""></a>
+        </div>
+    </div>
+    <div class="header">
+        <h1>Свяжитесь с нами!</h1>
+        <p>Мы всегда готовы помочь вам с вопросами, связанными с финансовым аудитом и 
+            консалтингом. Вы можете связаться с нами любым удобным для вас способом:</p>
+    </div>
+    <div class="info">
+        <div class="contacts">
+            <h2>Адрес офиса</h2>
+            <p>г. Казань, ул. Зайцева, д. 15, почтовый индекс 581957.</p>
+            <h2>Номер телефона</h2>
+            <p style="font-style: italic;">+7 (800) 555-35-35</p>
+            <p>звонок бесплатный по РФ</p>
+            <h2>Электронная почта</h2>
+            <p style="text-decoration:underline; font-style: italic;">FinanceAudit@gmail.com</p>
+            <h2>Часы работы</h2>
+            <p>Пн - Пт: 9:00 - 18:00</p>
+            <p>Сб - Вс: выходной</p>
+        </div>
+        <div class="pict">
+            <img src="{% static 'img/contact_img/image 1.png' %}" alt="">
+        </div>
+    </div>
+    <div class="end-block">
+        <div class="text">
+            <h3>ГОТОВЫ ПОМОЧЬ!</h3>
+            <p style="font-size: 35px;">Мы ценим ваше время и стремимся предоставить качественные услуги. 
+                Свяжитесь с нами, и давайте обсудим, как мы можем помочь вашему бизнесу!</p>
+        </div>
+        <div class="botton">
+            <a href="{% url 'zayavka' %}">Оставить завку</a>
+        </div>
+        <div class="chel">
+            <img src="{% static 'img/contact_img/pngtree-geeky-businessman-reading-from-book-idea-png-image_10710157 1.png' %}" alt="">
+        </div>
+    </div>
+</body>
+</html>

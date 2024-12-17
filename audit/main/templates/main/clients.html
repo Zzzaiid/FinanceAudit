@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клиенты и отзывы</title>
+    <link rel="stylesheet" href="{% static 'styles/clients.css' %}">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo">
+            <a href="{% url 'home' %}"><img width="40px" src="{% static 'img/main_img/lsdkfuh.png' %}" alt=""></a>
+        </div>
+        <div class="nav-list">
+            <a href="{% url 'about' %}">О нас</a>
+            <a href="{% url 'clients' %}">Клиенты и отзывы</a>
+            <a href="{% url 'contacts' %}">Контакты</a>
+            <a href="{% url 'news' %}">Новости</a>
+            <a href="{% url 'zayavka' %}">Оставить заявку</a>
+        </div>
+        <div class="autor">
+            <a href="{% url 'admin:index' %}"><img width="75%" src="{% static 'img/main_img/user 1.png' %}" alt=""></a>
+        </div>
+    </div>
+    <div class="text1">
+        <h1>Клиенты и отзывы</h1>
+        <p>Мы гордимся тем, что работаем с разнообразными клиентами 
+            из различных отраслей. Наша цель — предоставлять 
+            высококачественные услуги финансового аудита, которые 
+            помогают компаниям достигать их целей и оптимизировать 
+            финансовые процессы. </p> <br>
+        <span style="font-size: 23px; font-weight: bold;">Среди наших клиентов:</span>
+        <ul>
+            <li><span class="italic">Малый и средний бизнес:</span> помогаем предпринимателям наладить 
+                бухгалтерский учет и минимизировать налоговые риски.
+            </li> <br>
+            <li><span class="italic">Крупные корпорации:</span> предоставляем комплексные услуги по 
+                аудиту и консалтингу для обеспечения соответствия международным 
+                стандартам.
+            </li> <br>
+            <li><span class="italic">Некоммерческие организации:</span> способствуем прозрачности и 
+                эффективному управлению финансами.</li>
+        </ul>
+    </div>
+    <div class="otzivi">
+        <div class="text2">
+            <h2>Отзывы наших клиентов</h2>
+        </div>
+        <div class="photos">
+            <div class="photo1">
+                <h3>Анна Смирнова, <br> финансовый директор "ЭкоПродукт"</h3> 
+                <img src="{% static 'img/clients_img/360_F_615297870_FJcfPKiwDECValATLH7JBmJdRbmmPPd5 1.png' %}" alt="">
+                <img src="{% static 'img/clients_img/free-icon-five-stars-9192301 1.png' %}" alt="">
+                <p class="annochka">"Мы обратились в 'ФинансАудит' для проведения внешнего 
+                    аудита. Результаты превзошли наши ожидания. Команда
+                    предоставила ценные рекомендации, которые мы уже начали 
+                    внедрять."</p>
+            </div>
+            <div class="photo2">
+                <h3>Иван Петров,<br> директор компании "ТехноСервис"</h3>
+                <img src="{% static 'img/clients_img/1000_F_558853948_hwiFKhPWWF0Fz0jD74GKHRfhAc2Gxal6 1.png' %}" alt="">
+                <img src="{% static 'img/clients_img/free-icon-five-stars-9192301 1.png' %}" alt="">
+                <p>"Работа с командой 'ФинансАудит' была настоящим <br> открытием 
+                    для нас. Их профессионализм и внимание к деталям помогли нам оптимизировать наши финансовые 
+                    процессы и сократить расходы. Рекомендуем!"</p>
+            </div>
+            <div class="photo3">
+                <h3>Дмитрий Ковалев, <br> CEO "СтройГрупп"</h3>
+                <img src="{% static 'img/clients_img/istockphoto-1354898581-612x612 1.png' %}" alt="">
+                <img src="{% static 'img/clients_img/free-icon-five-stars-9192301 1.png' %}" alt="">
+                <p>"С 'ФинансАудит' мы нашли надежного партнера. Их подход к работе и готовность помочь 
+                    в любой ситуации делают их незаменимыми для нашего бизнеса."</p>
+            </div>
+        </div>
+    </div>
+    <div class="end-block">
+        <div class="text3">
+            <h4>С НАМИ НАДЕЖНО!</h4>
+            <p>С 2005 года в сфере аудита и налогового <br> консалтинга мы помогли 
+                тысячам <br> компаний стать более безопасными и прибыльными.</p>
+            <a href="{% url 'zayavka' %}">Оставить завку</a>
+        </div>
+        <div class="chel">
+            <img src="{% static 'img/clients_img/pngtree-handsome-friendly-businessman-fashionable-picture-image_13168095 1.png' %}" alt="">
+        </div>
+    </div>
+</body>
+</html>

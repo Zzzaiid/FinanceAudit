@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-bar {
+    display: flex;
+    background-color: rgb(122, 74, 25)
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+
+.nav-list a:hover {
+    background-color: rgb(156, 106, 74);
+}
+
+.logo {
+    padding: 5px;
+}
+
+.autor {
+    text-align: center;
+    padding-top: 8px;
+    margin-right: -35px;
+    margin-left: auto;
+}
+
+.header {
+    margin-left: 30px;
+    margin-right: 100px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.calendar {
+    display: flex;
+}
+
+.calendar p {
+    font-size: 20px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+.calendar img {
+    margin-right: 4px;
+}
+
+.citat {
+    display: flex;
+    margin-top: 30px;
+    height: 400px;
+    background-color: rgb(231, 231, 231);
+    border-bottom: solid;
+    border-top: solid;
+    border-color: rgb(122, 74, 25);
+}
+
+.kov {
+    margin-left: 30px;
+    display: block
+}
+
+.kov p {
+    font-size: 130px;
+    margin-top: 15px;
+}
+
+.citata {
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.chuvak img {
+    margin-right: 200px;
+    width: 400px;
+}
+
+.citot {
+    display: block;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+.citot span {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.text1 {
+    margin-left: 30px;
+    margin-right: 100px;
+    border-bottom: solid;
+    border-color: rgb(122, 74, 25);
+}
+
+.text1 p {
+    font-size: 23px;
+}
+
+.text2 {
+    margin-left: 30px;
+    margin-right: 100px;
+}
+
+.text2 p {
+    font-weight: 50;
+    font-size: 35px;
+}
+
+.text3 {
+    margin-left: 30px;
+    margin-right: 100px;
+}
+
+.text3 p {
+    font-size: 23px;
+}
+
+.text4 {
+    margin-left: 30px;
+    margin-right: 100px;
+}
+
+.text4 p {
+    font-size: 23px;
+}
+
+.spisok {
+    margin-left: 30px;
+    margin-right: 100px;
+}
+
+.spisok p {
+    font-size: 27px;
+}
+.spisok li {
+    font-size: 23px;
+}
+
+.spisok ul {
+    list-style-image: url(img/Rectangle\ 6.png);
+}
+
+.text5 {
+    margin-left: 30px;
+    margin-right: 100px;
+    border-bottom: solid;
+    border-color: rgb(122, 74, 25);
+}
+
+.text5 p {
+    font-size: 23px;
+}
+
+.text6 {
+    margin-left: 30px;
+    margin-right: 100px;
+}
+
+.text6 p {
+    font-size: 35px;
+}
+
+.text7 {
+    margin-left: 30px;
+    margin-right: 100px;
+}
+
+.text7 p {
+    font-size: 23px;
+}
+
+.end-block {
+    display: flex;
+    background-color: rgb(231, 231, 231);
+    height: 400px;
+    border-top: solid;
+    border-color: rgb(122, 74, 25);
+}
+
+.text8 {
+    margin-left: 30px;
+}
+
+.text8 h3 {
+    margin-top: 30px;
+    font-size: 45px;
+}
+
+.text8 p {
+    font-size: 30px;
+}
+
+.chel {
+    margin-left: 300px;
+    width: 400px;
+}
+
+.end-block a {
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    background-color: rgb(122, 74, 25);
+    height: 70px;
+    font-size: 40px;
+    line-height: 60px;
+    color: white;
+    border-radius: 30px;
+}
+
+.end-block a:hover {
+    background-color: rgb(156, 106, 74);
+    text-decoration: none;
+}
